@@ -1,0 +1,34 @@
+{
+  "eye_visibility": {
+    "reliable_threshold": 0.65,
+    "blocked_threshold": 0.25
+  },
+  "signals": {
+    "ear_closed_threshold": 0.20,
+    "mar_yawn_threshold": 0.45,
+    "yawn_min_duration_seconds": 1.0,
+    "yawn_max_duration_seconds": 8.0,
+    "closed_seconds_warning": 1.5,
+    "closed_seconds_high": 2.5,
+    "yawn_count_window_seconds": 300,
+    "yawn_count_warning": 3,
+    "head_down_seconds_warning": 2.0,
+    "head_down_seconds_high": 4.0,
+    "face_unavailable_seconds_attention": 2.0,
+    "face_unavailable_seconds_warning": 4.0
+    ,"perclos_window_seconds": 60,
+    "perclos_min_observed_seconds": 15,
+    "perclos_attention_threshold": 0.15,
+    "perclos_warning_threshold": 0.28,
+    "escalation_hold_seconds": 0.8,
+    "recovery_hold_seconds": 3.0
+    ,"fatigue_event_window_short_seconds": 300,
+    "fatigue_event_window_long_seconds": 600,
+    "fatigue_events_plan_rest": 2,
+    "fatigue_events_urgent_rest": 3
+  },
+  "confidence": {
+    "minimum_for_eye_conclusion": 0.65,
+    "minimum_for_high_risk": 0.55
+  }
+}

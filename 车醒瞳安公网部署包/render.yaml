@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: car-ai-agent
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 300 web_app:app
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: CAR_AI_AGENT_HOST
+        value: 0.0.0.0
